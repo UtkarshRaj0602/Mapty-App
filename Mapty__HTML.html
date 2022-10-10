@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Mapty" content="Map Your Workouts"/>
+<!-- BootStrap -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- CSS -->
+<link rel="stylesheet" href="./asset/css/Mapty__CSS.css">
+<link rel="stylesheet" href="./asset/css/MediaQuery__Mapty__CSS.css">
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/png" href="./asset/Images/Favicon.png"/>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet"/>
+<!-- Leaflet Geolocation -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+<script defer src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+<!-- Script -->
+<script defer src="./asset/js/Mapty__JS.js"></script>
+<title>Mapty || Map Your Workouts</title>
+</head>
+<body>
+
+    <!-- Content Starts Here!! -->
+    <section class="wrapper">
+        <div class="container-fluid">
+            <div class="row row-cols-2">
+
+                <!-- Sidebar and workout details section - PART 1 -->
+
+                <div class="col-12 col-md-12 col-lg-6 col-xxl-6">
+                    <div class="sidebar">
+                        <!-- <div class="Reset position-relative">
+                            <a href="#"><img src="./Images/refresh.png" class="Close__btn img-fluid position-absolute top-0 start-0" alt="Reset"></a>
+                        </div> -->
+                        <div class="How__to__use__Mapty position-relative">
+                            <a href="#"><img class="question__icon position-absolute top-0 end-0" src="./asset/Images/Question__icon.png" title="How to use Mapty?" alt="What to do?" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                        </div>
+                        <center>
+                            <img class="Logo_img" src="./asset/Images/Brand__logo.png">
+                        </center>
+                            <ul class="workouts">
+                                <form class="form">
+                                    <div class="form__row">
+                                        <!-- Form Part 1 -->
+                                        <label class="form__label">Type</label>
+                                        <select class="form__input form__input--type">
+                                            <option value="running">Running</option>
+                                            <option value="cycling">Cycling</option>
+                                            <option value="walking">Walking</option>
+                                            <option value="swimming">Swimming</option>
+                                        </select>
+                                    </div>
+                                    <!-- Form Part 2 -->
+                                    <div class="form__row">
+                                        <label class="form__label">Distance</label>
+                                        <input class="form__input form__input--distance" placeholder="km" />
+                                    </div>
+                                    <!-- Form Part 3 -->
+                                    <div class="form__row">
+                                        <label class="form__label">Duration</label>
+                                        <input class="form__input form__input--duration" placeholder="min"/>
+                                    </div>
+                                    <!-- Form Part 4 -->
+                                    <a href="#"><img src="./asset/Images/button icon.png" class="form__btn button__img__form"></a>
+                                    <!-- Form Part 5 -->
+                                    <span class="form__messages"></span>
+                                </form>
+
+                                <!-- sidebar and workout details section - PART 2 - Section 1-->
+
+                                <!-- <li class="workout workout--running" data-id="1234567890">
+                                    <h2 class="workout__title">Running on April 14<a href="#"><img src="./Images/close__icon.png" class="Close__btn img-fluid" alt="Close"></a></h2>
+                                    Workout Details Part 1
+                                    <div class="workout__details">
+                                        <span class="workout__icon">🏃‍♂️</span>
+                                        <span class="workout__value">5.2</span>
+                                        <span class="workout__unit">km</span>
+                                    </div>
+                                    Workout Details Part 2
+                                    <div class="workout__details">
+                                        <span class="workout__icon">⏱</span>
+                                        <span class="workout__value">24</span>
+                                        <span class="workout__unit">min</span>
+                                    </div>
+                                    Workout Details Part 3 -->
+                                    <!-- <div class="workout__details">
+                                        <span class="workout__icon">⚡️</span>
+                                        <span class="workout__value">4.6</span>
+                                        <span class="workout__unit">km/h</span>
+                                    </div>
+                                </li> -->
+
+                                <!-- sidebar and workout details section - PART 2 - Section 2-->
+
+                                <!-- <li class="workout workout--cycling" data-id="1234567891">
+                                    <h2 class="workout__title">Cycling on April 5<a href="#"><img src="./Images/close__icon.png" class="Close__btn img-fluid" alt="Close"></a></h2> -->
+                                    <!-- Workout Details Part 1 -->
+                                    <!-- <div class="workout__details">
+                                        <span class="workout__icon">🚴‍♀️</span>
+                                        <span class="workout__value">27</span>
+                                        <span class="workout__unit">km</span>
+                                    </div> -->
+                                    <!-- Workout Details Part 2 -->
+                                    <!-- <div class="workout__details">
+                                        <span class="workout__icon">⏱</span>
+                                        <span class="workout__value">95</span>
+                                        <span class="workout__unit">min</span>
+                                    </div> -->
+                                    <!-- Workout Details Part 3 -->
+                                    <!-- <div class="workout__details">
+                                        <span class="workout__icon">⚡️</span>
+                                        <span class="workout__value">16</span>
+                                        <span class="workout__unit">km/h</span>
+                                    </div>
+                                </li> -->
+
+                                <!-- sidebar and workout details section - PART 2 - Section 3-->
+
+                                <!-- <li class="workout workout--walking" data-id="1234567892">
+                                    <h2 class="workout__title">Walking on April 15<a href="#"><img src="./Images/close__icon.png" class="Close__btn img-fluid" alt="Close"></a></h2> -->
+                                    <!-- Workout Details Part 1 -->
+                                    <!-- <div class="workout__details">
+                                        <span class="workout__icon">🚶</span>
+                                        <span class="workout__value">27</span>
+                                        <span class="workout__unit">km</span>
+                                    </div> -->
+                                    <!-- Workout Details Part 2 -->
+                                    <!-- <div class="workout__details">
+                                        <span class="workout__icon">⏱</span>
+                                        <span class="workout__value">95</span>
+                                        <span class="workout__unit">min</span>
+                                    </div> -->
+                                    <!-- Workout Details Part 3 -->
+                                    <!-- <div class="workout__details">
+                                        <span class="workout__icon">⚡️</span>
+                                        <span class="workout__value">16</span>
+                                        <span class="workout__unit">km/h</span>
+                                    </div>
+                                </li> -->
+
+                                <!-- sidebar and workout details section - PART 2 - Section 4-->
+
+                                <!-- <li class="workout workout--swimming" data-id="1234567893">
+                                    <h2 class="workout__title">Swimming on April 2<a href="#"><img src="./Images/close__icon.png" class="Close__btn img-fluid" alt="Close"></a></h2> -->
+                                    <!-- Workout Details Part 1 -->
+                                    <!-- <div class="workout__details">
+                                        <span class="workout__icon">🏊</span>
+                                        <span class="workout__value">27</span>
+                                        <span class="workout__unit">km</span>
+                                    </div> -->
+                                    <!-- Workout Details Part 2 -->
+                                    <!-- <div class="workout__details">
+                                        <span class="workout__icon">⏱</span>
+                                        <span class="workout__value">95</span>
+                                        <span class="workout__unit">min</span>
+                                    </div> -->
+                                    <!-- Workout Details Part 3 -->
+                                    <!-- <div class="workout__details">
+                                        <span class="workout__icon">⚡️</span>
+                                        <span class="workout__value">16</span>
+                                        <span class="workout__unit">m/h</span>
+                                    </div> -->
+                                <!-- </li> -->
+                            </ul>
+                    </div>
+                </div>
+                
+                <!-- Map section -->
+
+                <div class="col-12  col-md-12 col-lg-6 col-xxl-6">
+                    <div class="MAP" id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Owner -->
+    <section class="COPYRIGHT__SECTION">
+        <center>
+            <span class="Copyright">Made by Utkarsh<a href="https://github.com/UtkarshRaj0602"><img src="./asset/Images/github-icon.png" class="github_icon img-fluid" alt="Github"></a></span>
+        </center>
+    </section>
+
+    <!-- MODAL -->
+    <section class="modal_here">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel">How to use Mapty    </h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                 <ul class="Indtructions_list">
+                      <li class="Instruction-items">Click anywhere on the rendered map (as shown on the right side of the screen) to mark that place on the map as your potential workout place.</li>
+                      <li class="Instruction-items">Once you have marked your potential workout place, you can see a marker placed on your chosen position.</li>
+                      <li class="Instruction-items">Now, you can fill the form (as shown on the left side of the screen). Once done, click on the button to submit the form.</li>
+                      <li class="Instruction-items">Once, submitted you can see your rendered workouts on the map and on the workouts display section (left part of the screen).</li>
+                      <li class="Instruction-items">Using, the above instructions, now you can map your workouts and keep yourself updated with your workouts routine.</li>
+                 </ul>
+            </div>
+            <div class="modal-footer">
+                 <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+        </div>
+    </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
