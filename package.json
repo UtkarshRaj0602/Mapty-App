@@ -1,0 +1,26 @@
+{
+  "name": "mapty-app",
+  "version": "1.0.0",
+  "description": "Map your workouts",
+  "default": "Mapty__HTML.html",
+  "scripts": {
+    "start": "parcel Mapty__HTML.html",
+    "build": "parcel build Mapty__HTML.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UtkarshRaj0602/Mapty-App.git"
+  },
+  "keywords": [
+    "Mapty"
+  ],
+  "author": "Utkarsh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UtkarshRaj0602/Mapty-App/issues"
+  },
+  "homepage": "https://github.com/UtkarshRaj0602/Mapty-App#readme",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  }
+}
